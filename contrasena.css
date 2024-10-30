@@ -1,0 +1,270 @@
+/* Estilos generales */
+body {
+    font-family: 'Archivo', sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(173, 216, 230), rgb(0, 125, 255));
+}
+
+/* Menú de navegación */
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2%;
+}
+
+.menu img {
+    width: 15%;
+    margin-right: 10%;
+}
+
+.menu a {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a.actual {
+    color: rgb(243, 140, 1);
+}
+
+.menu a:hover {
+    color: rgb(243, 140, 1);
+}
+
+.custom-button {
+    background-color: rgb(243, 140, 1);
+    color: rgb(255, 246, 231);
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+    width: 152px;
+    height: 33px;
+}
+
+.custom-button:hover {
+    background-color: rgb(0, 125, 255);
+    color: white;
+}
+
+/* Contenedor principal */
+.todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    max-width: 1200px; /* Para limitar el ancho máximo en pantallas grandes */
+    background-color: #ffffffbf;
+    border-radius: 2%;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+/* Perfil de usuario */
+.perfilfoto {
+    display: flex;
+    align-items: center;
+    margin: 1%; /* Menor margen */
+    width: 80%;
+}
+
+.foto img {
+    border-radius: 50%;
+    border: 3px solid rgb(0, 125, 255);
+    width: 60px; /* Tamaño reducido */
+    height: 60px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 10px; /* Más cerca de la foto */
+    width: 65%;
+}
+
+.contenedor h1 {
+    color: rgb(0, 125, 255);
+    font-size: 30px;
+    font-weight: 700;
+    margin: 3% 0 0;
+}
+
+.perfil h2 {
+    color: rgb(243, 140, 1);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0%;
+}
+
+.info-guar1 {
+    background-color: rgb(198, 198, 198);
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    border: none;
+    border-radius: 15px;
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.perfil h4 {
+    color: rgb(101, 101, 101);
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 0.8%;
+}
+
+h3 {
+    align-self: flex-start;
+    margin-left: 19%;
+    color: rgb(0, 125, 255);
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 3%;
+}
+
+/* Formulario de datos */
+.datosreal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.datos {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Espaciado entre las dos columnas */
+    width: 100%;
+    padding: 20px 0;
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Permitir que las columnas crezcan */
+    min-width: 300px; /* Establecer un ancho mínimo */
+}
+
+.column:first-child {
+    margin-right: 47px; /* Espacio a la derecha de la primera columna */
+}
+
+
+.column label {
+    margin-bottom: 5px;
+}
+
+.column input {
+    margin-bottom: 15px;
+    padding: 8px 10px;
+    width: 100%; /* Se mantiene para que se expanda */
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para los inputs de la contraseña */
+.contras {
+    margin-bottom: 15px;
+    padding: 8px 10px;
+    width: 100%; /* Se mantiene para que se expanda */
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: -12px;
+    margin-bottom: 0px;
+}
+
+/* Botón de guardar información */
+.info-guar {
+    background-color: rgb(0, 125, 255);
+    color: rgb(255, 246, 231);
+    font-weight: 800;
+    border: none;
+    border-radius: 15px;
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.x {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre input y botón */
+}
+
+.contenedor-centrado {
+    display: flex;
+    flex-direction: column; /* Aseguramos que los elementos se alineen verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    height: 100%; /* Asegura que ocupe todo el alto del contenedor padre */
+}
+
+.contraseña {
+    display: flex;
+    flex-direction: column; /* Alineamos los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    gap: 10px; /* Espaciado entre los elementos */
+    width: 100%; /* Ocupa el ancho completo */
+}
+
+.contraseña label {
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+.contraseña input {
+    width: 100%; /* Asegura que ocupe el ancho completo */
+    max-width: 400px; /* Opcional: limita el ancho máximo de los inputs */
+}
+
+/* Ajustes para el botón de cambiar contraseña */
+.contraseña button {
+    width: 110px; /* Ancho fijo para el botón */
+    height: 30px; /* Altura fija para el botón */
+}
+
+/* Estilos para el enlace de cambio de contraseña */
+.contraseña a {
+    background-color: rgb(0, 125, 255);
+    color: rgb(255, 246, 231);
+    font-weight: 800;
+    border: none;
+    border-radius: 15px;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70%;
+}
+
+.contraseña a:hover {
+    background-color: rgb(0, 125, 255);
+    color: white;
+}
